@@ -125,7 +125,7 @@ date: 2022-12-06
 
 You can now open pull request to merge in `main` branch.
 
-### Activity: Merge your pull request
+### Activity: Open pull request
 
 1. Create new **pull request**.
 1. Make sure to select your repository while creating pull request as `base` repository.
