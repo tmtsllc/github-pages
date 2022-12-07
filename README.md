@@ -18,7 +18,7 @@ With GitHub Pages, you can host project blogs, documentation, resumes, portfolio
    ![](./images/1.jpg)
 2. In the new tab, follow the prompts to create a new repository.
    - For owner, choose your personal account or an organization to host the repository.
-   - We recommend creating a public repository—private repositories will [use Actions minutes].
+   - **Important! Make sure to uncheck box `Copy the main branch only`**.
     ![](./images/2.jpg)
 3. After your new repository is created, wait about 20 seconds, then refresh the page. Follow the step-by-step instructions in the new repository's README.
 
@@ -32,11 +32,16 @@ The first step is to enable GitHub Pages on this [repository]. When you enable G
 ### Activity: Enable GitHub Pages
 
 1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab.
-1. Under your repository name, click **Settings**.
-1. Click **Pages**, in the "GitHub Pages" section, use the Source drop-down, then select **main branch**.
-1. Wait about _one minute_, then refresh this page for the next step.
-   > Turning on GitHub Pages creates a deployment of your repository. GitHub Actions may take up to a minute to respond while waiting for the deployment. Future steps will be about 20 seconds; this step is slower.
+2. Under your repository name, click **Settings**.
+3. Click **Pages**, in the "GitHub Pages" section, use the Source drop-down, then select **main branch**.
+4. Wait about _one minute_, then refresh this page for the next step.
+   > Turning on GitHub Pages creates a deployment of your repository. GitHub Actions may take up to a minute to respond while waiting for the deployment.
 
+![](./images/3.jpg)
+
+Click on `Actions` tab to confirm deployment was created.
+
+![](./images/4.jpg)
 
 <summary><h2>Step 2: Configure your site</h2></summary>
 
@@ -58,8 +63,8 @@ We need to use a blog-ready theme. For this activity, we will use a theme named 
     ```
 1. (optional) You can modify the other configuration variables such as `title:`, `author:`, and `description:` to further customize your site.
 1. Commit your changes.
-1. Wait about 20 seconds then refresh this page for the next step.
 
+![](./images/5.jpg)
 
 <summary><h2>Step 3: Customize your homepage</h2></summary>
 
@@ -79,7 +84,7 @@ You can customize your homepage by adding content to either an `index.md` file o
 
 <summary><h2>Step 4: Create a blog post</h2></summary>
 
-_Your home page is looking great! :cowboy_hat_face:_
+_Your home page is looking great!
 
 GitHub Pages uses Jekyll. In Jekyll, we can create a blog by using specially named files and frontmatter. The files must be named `_posts/YYYY-MM-DD-title.md`. You must also include `title` and `date` in your frontmatter.
 
@@ -88,11 +93,10 @@ GitHub Pages uses Jekyll. In Jekyll, we can create a blog by using specially nam
 ```yml
 ---
 title: "Welcome to my blog"
-date: 2019-01-20
+date: 2022-12-06
 ---
 ```
 
-For more information about configuring front matter, see the [Jekyll frontmatter documentation](https://jekyllrb.com/docs/frontmatter/).
 
 ### Activity: Create a blog post
 
@@ -115,25 +119,45 @@ For more information about configuring front matter, see the [Jekyll frontmatter
 1. Commit your changes to your branch.
 1. Wait about 20 seconds then refresh this page for the next step.
 
+![](./images/6.jpg)
 
-<summary><h2>Step 5: Merge your pull request</h2></summary>
+<summary><h2>Step 5: Open and Merge your pull request</h2></summary>
 
-_Nice work, friend :heart:! People will be reading your blog in no time!_
+You can now open pull request to merge in `main` branch.
 
-You can now [merge] your pull request!
+### Activity: Merge your pull request
+
+1. Create new **pull request**.
+1. Make sure to select your repository while creating pull request as `base` repository.
+
+![](./images/8.jpg)
+
+![](./images/9.jpg)
+
 
 ### Activity: Merge your pull request
 
 1. Click **Merge pull request**.
 1. Delete the branch `my-pages` (optional).
-1. Wait about 20 seconds then refresh this page for the next step.
 
 
 
 
 <summary><h2>Finish</h2></summary>
 
-_Congratulations friend, you've completed this course!_
+After pull is merged, new deployment will be created:
+
+![](./images/10.jpg)
+
+Wait for completion and click the deployment to get the URL:
+
+![](./images/11.jpg)
+
+**GitHub Pages**
+
+![](./images/12.jpg)
+
+_Congratulations, you've completed this course!_
 
 Your blog is now live and has been deployed!
 
